@@ -3,6 +3,11 @@ body {
     background-color: black;
 }
 
+a {
+    text-decoration: none !important;
+    color: white;
+}
+
 .countdown {
     margin: auto;
     width: 600px;
@@ -37,3 +42,11 @@ body {
     color: #970DB2 !important;
 }
 
+#goto {
+    border: 1px solid #fa333f;
+    background: #fa333f;
+    color: white;
+    padding: 0px 40px;
+    border-radius: 5px;
+    font-size: 25px !important;    
+}
