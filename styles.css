@@ -1,0 +1,22 @@
+
+body {
+    background-color: black;
+}
+
+.countdown {
+    margin: auto;
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+#count1, #count2, #count3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}

@@ -15,7 +15,7 @@
         var distance = END_DATE - actualDate;
         if (distance < 0) {
             clearInterval(timer);
-            document.getElementById('paragraph').innerHTML = 'EXPIRED!';
+            document.getElementById('count1').innerHTML = 'EXPIRED!';
             return;
         }
 
@@ -36,7 +36,7 @@
         if (seconds < 10)
             seconds = '0' + seconds;
 
-        document.getElementById('paragraph').innerHTML = (days + ":" + hours + ":" + minutes + ":" + seconds);
+        document.getElementById('count1').innerHTML = (days + ":" + hours + ":" + minutes + ":" + seconds);
 
     }, 1000);
 
