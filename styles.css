@@ -6,17 +6,34 @@ body {
 .countdown {
     margin: auto;
     width: 600px;
-    height: 300px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     font-size: 41px;
-}
-
-#count1, #count2, #count3 {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
+
+#announcements {
+    border: 1px solid #fa333f;
+    background: #fa333f;
+    color: white;
+    padding: 0px 40px;
+    border-radius: 5px;
+}
+
+#count1 {
+    color: #0744B6 !important;
+}
+
+#count2 {
+    color: red !important;
+}
+
+#count3 {
+    color: #970DB2 !important;
+}
+
