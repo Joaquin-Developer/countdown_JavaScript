@@ -1,41 +1,43 @@
-/**
- * CountDown in JavaScript.-
- */
-const end_date = new Date('10/06/2020 11:46 PM');
-const second = 1000;
-const minute = second * 60;
-const hour = minute * 60;
-const day = hour * 24;
+/* setInterval */
 
-//var timer = setTimeout(updateCountDown(), 1000);
+(function() {
+    'use strict';
 
-function updateCountDown() {
-    var actualDate = new Date();
-    var distance = end_date - actualDate;
-    if (distance < 0) {
-        clearInterval(timer);
-        document.getElementById('paragraph').innerHTML = 'EXPIRED!';
-        return;
-    }
+    const END_DATE = new Date(2020,11,4,0,0,0);   // Params: yyyy, mm, dd, hh, mm, ss
+    const SECOND = 1000;
+    const MINUTE = SECOND * 60;
+    const HOUR = MINUTE * 60;
+    const DAY = HOUR * 24;
 
-    var days = Math.floor(distance / day);
-    var hours = Math.floor((distance % day) / hour);
-    var minutes = Math.floor((distance % hour) / minute);
-    var seconds = Math.floor((distance % minute) / second);
+    var timer = setInterval(function() {
 
-    var stringData = days + ":" + hours + ":" + minutes + ":" + seconds;
-    console.log(stringData);
-    document.getElementById('paragraph').innerHTML = stringData;
+        var actualDate = new Date();
+        var distance = END_DATE - actualDate;
+        if (distance < 0) {
+            clearInterval(timer);
+            document.getElementById('paragraph').innerHTML = 'EXPIRED!';
+            return;
+        }
 
-}
-//window.onload = setInterval(updateCountDown(), 1000);   // dada 1s se ejecuta esta funcion
+        var days = Math.floor(distance / DAY);
+        var hours = Math.floor((distance % DAY) / HOUR);
+        var minutes = Math.floor((distance % HOUR) / MINUTE);
+        var seconds = Math.floor((distance % MINUTE) / SECOND);
 
-function repetir() {
-    setTimeout(updateCountDown(), 1000);
-}
+        if (days < 10)
+            days = '0' + days;
 
-/**
- * EN chromium no funciona el setInterval ni el setTimeout :/
- */
+        if (hours < 10)
+            hours = '0' + hours;
 
-window.onload = repetir();
+        if (minutes < 10)
+            minutes = '0' + minutes;
+        
+        if (seconds < 10)
+            seconds = '0' + seconds;
+
+        document.getElementById('paragraph').innerHTML = (days + ":" + hours + ":" + minutes + ":" + seconds);
+
+    }, 1000);
+
+})();
