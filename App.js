@@ -10,12 +10,12 @@ const DAY = HOUR * 24;
 (function() {
     'use strict';
 
-    var timer = setInterval(function() {
+    let timer = setInterval(function() {
 
-        var actualDate = new Date();
-        var distance1 = END_DATE_1 - actualDate;
-        var distance2 = END_DATE_2 - actualDate;
-        var distance3 = END_DATE_3 - actualDate;
+        let actualDate = new Date();
+        let distance1 = END_DATE_1 - actualDate;
+        let distance2 = END_DATE_2 - actualDate;
+        let distance3 = END_DATE_3 - actualDate;
 
         showDataInPage(distance1, 'count1');
         showDataInPage(distance2, 'count2');
@@ -33,10 +33,10 @@ function showDataInPage(distance, element) {
         return;
     }
 
-    var days = Math.floor(distance / DAY);
-    var hours = Math.floor((distance % DAY) / HOUR);
-    var minutes = Math.floor((distance % HOUR) / MINUTE);
-    var seconds = Math.floor((distance % MINUTE) / SECOND);
+    let days = Math.floor(distance / DAY);
+    let hours = Math.floor((distance % DAY) / HOUR);
+    let minutes = Math.floor((distance % HOUR) / MINUTE);
+    let seconds = Math.floor((distance % MINUTE) / SECOND);
 
     if (days < 10)
         days = '0' + days;
