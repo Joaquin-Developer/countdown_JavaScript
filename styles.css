@@ -22,6 +22,10 @@ a {
     color: white;
 }
 
+#count1, #count2, #count3, #count4, #count5 {
+    line-height:15px;
+}
+
 #announcements {
     border: 1px solid #fa333f;
     background: #fa333f;
@@ -31,15 +35,24 @@ a {
 }
 
 #count1 {
-    color: #0744B6 !important;
+    color: #970DB2 !important;
 }
 
 #count2 {
-    color: red !important;
+    color: #FF0297 !important;
 }
 
 #count3 {
-    color: #970DB2 !important;
+    color: #75e254 !important;
+}
+
+#count4 {
+    color: #4a0863 !important;
+}
+
+#count5
+{
+	color: #fff !important;
 }
 
 #goto {
