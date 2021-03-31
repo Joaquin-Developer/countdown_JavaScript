@@ -1,7 +1,5 @@
 
-body {
-    background-color: black;
-}
+body { background-color: black; }
 
 a {
     text-decoration: none !important;
@@ -22,7 +20,8 @@ a {
     color: white;
 }
 
-#count1, #count2, #count3, #count4, #count5 {
+#count1, #count2, #count3, #count4, #count5 
+{
     line-height:15px;
 }
 
@@ -34,26 +33,15 @@ a {
     border-radius: 5px;
 }
 
-#count1 {
-    color: #970DB2 !important;
-}
+#count1 { color: #970DB2 !important }
 
-#count2 {
-    color: #FF0297 !important;
-}
+#count2 { color: #FF0297 !important }
 
-#count3 {
-    color: #75e254 !important;
-}
+#count3 { color: #75e254 !important }
 
-#count4 {
-    color: #4a0863 !important;
-}
+#count4 { color: #4a0863 !important }
 
-#count5
-{
-	color: #fff !important;
-}
+#count5 { color: #fff !important; }
 
 #goto {
     border: 1px solid #fa333f;
