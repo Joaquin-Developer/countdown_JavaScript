@@ -15,7 +15,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    font-size: 41px;
+    font-size: 55px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
@@ -36,6 +36,11 @@ a {
     padding: 0px 40px;
     border-radius: 5px;
 }
+
+
+/**
+Hacer esto desde JavaScript!!
+**/
 
 #count_1 {
     color: #970DB2 !important
@@ -64,4 +69,19 @@ a {
     padding: 0px 40px;
     border-radius: 5px;
     font-size: 25px !important;
+}
+
+
+
+.centered {
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Establece el alto del contenedor */
 }
